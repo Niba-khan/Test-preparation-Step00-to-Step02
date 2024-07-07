@@ -35,7 +35,7 @@
  //<<<<<<<<<<<<<<Type error>>>>>>>>>>>>>>
  //The TypeError object represents an error when an operation could not be performed, typically (but not exclusively) when a value is not of the expected type.
  let age: number = 18;
- //age = "Eighteen";  // Type 'string' is not assignable to type 'number'
+ //console.loger(age) // Type error
 
  //Function parameter
  function personName(name:string) {
@@ -48,6 +48,11 @@
  //<<<<<<<<<<<<<<<<Assignibility error>>>>>>>>>>>>>>><<
  //Assignability error occurs when TypeScript determines that a value cannot be assigned to a variable or parameter due to a type mismatch or violation of type constraints.
 
+
+ let myNAme = "nibakhan";
+ myNAme = 15               //Assignibilty error
+ console.log(myNAme)
+ 
  let userName = "Niba khan"
  if(true){
     console.log(userName)   // It seems there are assignibility errors; we are accessing it inside a block.
